@@ -20,7 +20,7 @@ public class LLM_Feedback {
 	@BeforeTest
 	public void setup() throws MalformedURLException {
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
-		URL url = new URL("http://172.12.20.99:4444/wd/hub");
+		URL url = new URL("http://172.20.23.92:4444/wd/hub");
 		driver = new RemoteWebDriver(url, dc);
 	}
 
@@ -121,16 +121,16 @@ public class LLM_Feedback {
 				driver.switchTo().window(window);
 				break;
 			}
-//		try {
-//			WebDriverWait wait7 = new WebDriverWait(driver, 30);
-//			WebElement biosamp = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Input']")));
-//			biosamp.getText();
-//			System.out.println("--------------------------*****************-----------------------");
-//			System.out.println("The getext the biosample id sucessfully");
-//		} catch (Exception e) {
-//			System.out.println("--------------------------*****************-----------------------");
-//			System.out.println("The can't get biosample id");
-//		}
+		// try {
+		// 	WebDriverWait wait7 = new WebDriverWait(driver, 30);
+		// 	WebElement biosamp = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Input']")));
+		// 	biosamp.getText();
+		// 	System.out.println("--------------------------*****************-----------------------");
+		// 	System.out.println("The getext the biosample id sucessfully");
+		// } catch (Exception e) {
+		// 	System.out.println("--------------------------*****************-----------------------");
+		// 	System.out.println("The can't get biosample id");
+		// }
 		try {
 			WebDriverWait wait7 = new WebDriverWait(driver, 30);
 			WebElement Text = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//textarea[@placeholder='Textarea']")));

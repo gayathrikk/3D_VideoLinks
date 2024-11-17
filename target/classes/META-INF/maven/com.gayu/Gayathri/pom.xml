@@ -63,6 +63,16 @@
     <artifactId>javax.mail</artifactId>
     <version>1.6.2</version> <!-- or the latest version -->
 </dependency>
+   	<dependency>
+   		<groupId>com.apiTest</groupId>
+   		<artifactId>ApiTest</artifactId>
+   		<version>0.0.1-SNAPSHOT</version>
+   	</dependency>
+   	<dependency>
+   		<groupId>com.test</groupId>
+   		<artifactId>PP_Machines_storage</artifactId>
+   		<version>0.0.1-SNAPSHOT</version>
+   	</dependency>
    </dependencies>
 
   <build>
@@ -80,7 +90,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M5</version>
           <configuration>
-            <test>com.gayu.Gayathri.AutoRegistration</test>
+            <test>com.gayu.Gayathri.MRIPageclicks</test>
           </configuration>
         </plugin>
       </plugins>

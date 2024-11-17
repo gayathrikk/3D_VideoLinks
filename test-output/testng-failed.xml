@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gayu.Gayathri.AutoRegistration">
+      <class name="com.gayu.Gayathri.MRIPageclicks">
         <methods>
-          <include name="vlaidate"/>
+          <include name="Videovalidate"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.gayu.Gayathri.AutoRegistration -->
+      </class> <!-- com.gayu.Gayathri.MRIPageclicks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
